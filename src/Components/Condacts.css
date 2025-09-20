@@ -1,0 +1,31 @@
+/* src/components/ContactPage.css */
+
+.contact-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contact-paper {
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.contact-form .MuiTextField-root {
+  background-color: #ffffff;
+}
+
+.contact-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+}
+
+.submit-btn-container {
+  margin-top: 1rem;
+
+
+}
+.condact-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #3a3737; font-size: 0.875rem;}
