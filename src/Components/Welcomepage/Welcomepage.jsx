@@ -8,12 +8,12 @@ const Welcomepage = () => {
         <p className="subtitle">Join us in our mission to protect and secure a healthier future for all.
         
         
-        </p>
-        <a href='/login'><button  className="cta-button"> Get Involved</button></a>
+        </p><a href='/login'><button  className="cta-button">Get Involved</button></a>
      
      
       </div>
     </div>
   )}
 
-export default Welcomepage
+
+  export default Welcomepage

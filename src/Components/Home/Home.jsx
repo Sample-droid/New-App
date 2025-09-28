@@ -1,8 +1,8 @@
-import React from 'react'
+
 import './Home.css'
 
 
-import './Footer.css'
+import '../Footer.css'
 import { AppBar, Box, IconButton, Button, Toolbar, Typography } from '@mui/material'
 const Home = () => {
   return (
@@ -17,12 +17,12 @@ const Home = () => {
       <AppBar color="Grey"  position="static"><Toolbar>
         
           
-          <h1>MyApp</h1>
+          <h1>Guardliners</h1>
         <nav className='nav-list'>
           
            
-            <a href="/features">Features</a>
-            <a href="/contact">Contact</a>
+            
+            <a href="/features">Features</a><a href="/contact">Contact</a>
           
         </nav>
       
@@ -34,26 +34,29 @@ const Home = () => {
 <section className="hero">
       
 
-      <section className="features">
-        <div className="feature-card">
-          <h3>Fast Performance</h3>
-          <p>Blazing-fast load times and seamless interactions.</p>
-        </div>
-        <div className="feature-card">
-          <h3>Customizable</h3>
-          <p>Easily tailor settings to match your workflow.</p>
-        </div>
-        <div className="feature-card">
-          <h3>Secure</h3>
-          <p>State-of-the-art encryption to protect your data.</p>
-        </div>
-</section>
-      <h1>Your Journey</h1>
-        <p><h2>A Goal With No End !!</h2></p>
+      <section className="features" >
+        <div className="feature-card" ><div classname="hero button"><h3><a href="/eventcreate"><button>Create Event</button></a></h3>
         
-        <button>Get Started</button>
+<p>Organize and manage your events with ease.</p>
+        </div></div>
+        <div className="feature-card">
+          
+          
+          
+           <div classname="hero button"><h3><a href="/eventjoin"><button>Join Event</button></a></h3>
+        <p>Connect and participate in community events.</p>  </div></div>
+       
+
+         
+</section>
+     
+      <h1>Your Journey</h1>
+       <h2> <p>A Goal With No End !!</p></h2>
+        
+        
+        {/* <p>Join us in making a difference. Together, we can create a sustainable future for generations to come.</p> */}
       </section>
-      <footer className="footer">
+     <footer className="footer">
     <div className="footer-content">
       {/* Brand Section */}
       <div className="footer-brand">
@@ -93,9 +96,9 @@ const Home = () => {
 
     <div className="footer-bottom">
       © {new Date().getFullYear()} EcoGuardians. All rights reserved.
+    
     </div>
-  </footer>
-    </div>
+  </footer></div>
     
   )
 }

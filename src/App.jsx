@@ -1,45 +1,50 @@
-import { useState } from 'react'
 import './App.css'
 
 
-import Login from './Components/Login'
+import Login from './Components/Login/Login'
 
-import Home from './Components/Home'
+import Home from './Components/Home/Home'
 import { Route, Routes } from 'react-router-dom'
 
 
-import Features from './Components/Features'
+import Features from './Components/Features/Features'; import EventJoin from './Components/Forms/Events/EventJoin/EventJoin'
 
 
-import Condacts from './Components/Condacts'
-import Signup from './Components/Signup'
-import Welcomepage from './Components/Welcomepage'
+import Condacts from './Components/Condact/Condacts';import Signup from './Components/Signup/Signup'
+import Welcomepage from './Components/Welcomepage/Welcomepage';import EventCreate from './Components/Forms/Events/EventCreate/EventCreate'
+
+
+import EventJoinForm from './Components/Forms/Events/EventJoin/EventJoinForm/EventJoinForm';
+
 function App() {
-
-  return (
-    <>
+return (
+   
+   <>
       <div>
        
        <Routes>
-        
-        
-        <Route><Route path='/login' element={<Login/>}/> 
+        <Route><Route path='/login' element={<Login/>}/> <Route path='/eventcreate' element={<EventCreate/>}/>
+       
+       
         <Route path='/home' element={<Home/>}/> 
         
         
-        <Route path='/features' element={<Features/>}/> 
+        <Route path='/features' element={<Features/>}/> <Route path='/eventjoin' element={<EventJoin/>}/>
         
-        <Route path='/contact' element={<Condacts/>}/>
-
+        
+<Route path='/contact' element={<Condacts/>}/>
 
         <Route path='/signup' element={<Signup/>}/>
-
-        <Route path='/' element={<Welcomepage/>}/>
+<Route path='/' element={<Welcomepage/>}/> <Route path='/join/:id' element={<EventJoinForm/>}/>
+       
         </Route>
-       </Routes>
-      </div>
+       
+       </Routes></div>
+
       
-    </>
-  )
-}
+      
+   
+   </>
+)}
+
 export default App
