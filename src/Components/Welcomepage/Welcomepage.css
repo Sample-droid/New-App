@@ -26,8 +26,8 @@
   z-index: 1;
 }
 
-.welcome-content {
-  position: relative;
+.welcome-content {position: relative;
+  
   z-index: 2;
   height: 100%;
   display: flex;
