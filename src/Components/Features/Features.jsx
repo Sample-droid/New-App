@@ -28,11 +28,11 @@ const Features = () => {
           
          <a href='/green'><h3>Green Design</h3></a>
           
-          <p>Lets create scenary of your own view by planting</p>
+          <p>Lets create an Eco-Scenary of your own view</p>
         </div>
         <div className="feature-card">
-         <a href='/f'> <h3>Food For All</h3></a>
-         <p>Let us free others from hunger</p> 
+         <a href='/f'> <h3>Food For Health</h3></a>
+         <p>Eat For Mind And Body</p> 
         </div>
         <div className="feature-card">
          <a href='/b'><h3>Blue Coat</h3></a>
@@ -46,7 +46,7 @@ const Features = () => {
         <div className="feature-card">
           
           
-          <h3>Feel Free</h3>
+          <a href='/feedback'><h3>Feedback</h3></a>
           <p>Anything in mind to share with others. Share here</p>
         </div>
       </section>

@@ -50,8 +50,7 @@ const Home = () => {
          
 </section>
      
-      <h1>Your Journey</h1>
-       <h2> <p>A Goal With No End !!</p></h2>
+      
         
         
         {/* <p>Join us in making a difference. Together, we can create a sustainable future for generations to come.</p> */}
@@ -102,5 +101,4 @@ const Home = () => {
     
   )
 }
-
 export default Home
