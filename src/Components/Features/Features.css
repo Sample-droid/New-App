@@ -9,7 +9,7 @@
 
 html, body {
   margin: 0;
-  padding: 0;
+ 
   width: 100%;
   height: auto;}
   
@@ -152,4 +152,66 @@ html, body {
   .feature-card {
     padding: 1.25rem;
   }
+}
+
+/* ----------------------------------------------------------
+   4. Filter Bar and Category Tabs
+---------------------------------------------------------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 2rem;
+}
+
+.filter-bar input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.category-tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #eee;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.category-tabs button:hover {
+  background: #ddd;
+}
+
+.category-tabs button.active {
+  background: #51b48b;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------
+   5. No Results Placeholder
+---------------------------------------------------------- */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #444;
+  font-size: 1.1rem;
+  padding: 2rem 0;
+}
+
+/* ----------------------------------------------------------
+   6. (Optional) Enhance Existing Hover Accent
+   — Tweak accent color or shadow for added polish
+---------------------------------------------------------- */
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }

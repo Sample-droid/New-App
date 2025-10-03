@@ -192,9 +192,8 @@ export default function Feedback() {
               </Grid>
             </Grid>
 
-            <Typography className="footer">
-              © 2025 MyApp. All rights reserved.
-            </Typography>
+  
+
           </Box>
         </Paper>
       </motion.div>
@@ -208,7 +207,54 @@ export default function Feedback() {
           {snackbar.message}
         </Alert>
       </Snackbar>
-    </Container>
+    
+    
+           <footer className="footer">
+    <div className="footer-content">
+      {/* Brand Section */}
+      <div className="footer-brand">
+        <h2 className="brand-title">EcoGuardians</h2>
+        <p className="brand-tagline">Protecting Nature, Empowering People</p>
+      </div>
+
+      {/* Quick Links */}
+      <nav className="footer-links">
+        <h4 className="links-heading">Quick Links</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/projects">Our Projects</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      {/* Get Involved */}
+      <div className="footer-involve">
+        <h4 className="involve-heading">Get Involved</h4>
+        <button className="involve-button">Volunteer</button>
+        <button className="involve-button outline">Donate</button>
+      </div>
+
+      {/* Social Media */}
+      <div className="footer-social">
+        <h4 className="social-heading">Follow Us</h4>
+        <div className="social-icons">
+          {/* Replace with actual SVGs or icon components */}
+          <a href="https://facebook.com" aria-label="Facebook" className="icon">F</a>
+          <a href="https://X.com" aria-label="X" className="icon">T</a>
+          <a href="https://instagram.com" aria-label="Instagram" className="icon">I</a>
+        </div>
+      </div>
+    </div>
+
+    <div className="footer-bottom">
+      © {new Date().getFullYear()} EcoGuardians. All rights reserved.
+    
+    </div>
+  </footer></Container>
+
+
+
 );
 
 }

@@ -147,6 +147,8 @@ const Welcomepage = () => {
         </Container>
       </motion.div>
     </Box>
+    
   );
 };
+
 export default Welcomepage;

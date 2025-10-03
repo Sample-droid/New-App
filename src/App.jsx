@@ -17,12 +17,15 @@ import Welcomepage from './Components/Welcomepage/Welcomepage';import EventCreat
 import EventJoinForm from './Components/Forms/Events/EventJoin/EventJoinForm/EventJoinForm'; import Green from './Components/Forms/OEvents/Green';
 
 import Foo from './Components/Forms/OEvents/Foo'; import Feedback from './Components/Feedback/Feedback';
+import CarbonCalculator from './Components/Forms/OEvents/Carbon';import EcoQuiz from './Components/Quiz/EcoQuiz';
+
+
+
+
 function App() {
-
-
-
-
-        return (
+return (
+   
+   
    <>
       
       <div>
@@ -32,15 +35,18 @@ function App() {
        
        
         <Route path='/home' element={<Home/>}/> <Route path='/green' element={<Green/>}/>
-        <Route path='/feedback' element={<Feedback/>}/>
+        <Route path='/feedback' element={<Feedback/>}/><Route path='/carbon' element={<CarbonCalculator/>}/>
         
         <Route path='/features' element={<Features/>}/> <Route path='/eventjoin' element={<EventJoin/>}/>
         
         
+
+
+
 <Route path='/contact' element={<Condacts/>}/> <Route path='/f' element={<Foo/>}/>
  <Route path='/signup' element={<Signup/>}/>
 
-
+<Route path='/ecoquiz' element={<EcoQuiz/>}/>
 
 
 <Route path='/' element={<Welcomepage/>}/> <Route path='/join/:id' element={<EventJoinForm/>}/>
